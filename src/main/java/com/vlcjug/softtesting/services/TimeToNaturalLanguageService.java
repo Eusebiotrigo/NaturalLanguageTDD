@@ -1,7 +1,5 @@
 package com.vlcjug.softtesting.services;
 
-import org.springframework.stereotype.Service;
-
-@Service
-public class TimeToNaturalLanguageService {
+public interface TimeToNaturalLanguageService {
+    String convertCurrentTimeToNaturalLanguage();
 }

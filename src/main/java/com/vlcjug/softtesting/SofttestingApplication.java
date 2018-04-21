@@ -9,4 +9,5 @@ public class SofttestingApplication {
     public static void main(String[] args) {
         SpringApplication.run(SofttestingApplication.class, args);
     }
+
 }
