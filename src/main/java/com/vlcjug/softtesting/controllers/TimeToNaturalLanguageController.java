@@ -16,6 +16,6 @@ public class TimeToNaturalLanguageController {
     @GetMapping(produces = "text/plain")
     @ResponseBody
     public String getCurrentTime() {
-        return null;
+        return timeToNaturalLanguageService.convertCurrentTimeToNaturalLanguage();
     }
 }

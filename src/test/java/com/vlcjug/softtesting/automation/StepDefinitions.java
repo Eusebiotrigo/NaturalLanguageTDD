@@ -6,6 +6,7 @@ import cucumber.api.java.en.When;
 import org.junit.Ignore;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -19,7 +20,7 @@ public class StepDefinitions extends SpringIntegrationTest {
 
     @Then("^the client receives current hour in natural language$")
     public void theClientReceivesHourInNaturalLanguage() throws Throwable {
-        final LocalDateTime now = LocalDateTime.now();
+        final LocalTime now = LocalTime.now();
         String expectedValueInString = null;
         final int currentHour = now.getHour();
         switch (currentHour) {
